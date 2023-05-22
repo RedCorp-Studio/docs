@@ -78,7 +78,7 @@ Config.LogLevel = 0 -- 0 = Debug | 1 = Info | 2 = Warn | 3 = Danger
 |`Permissions.Admin.SetPed`|Admin can change his own ped|
 |`Permissions.Admin.Announce`|Admin can post server announces|
 
-### Player management
+### Players management
 |Permission value|Description|
 |---|---|
 |`Permissions.Players.All`|Grants all players related permissions|
