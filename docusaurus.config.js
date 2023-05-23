@@ -93,7 +93,7 @@ const config = {
             items: [
               {
                 label: 'Documentation',
-                to: '/docs/category/ultimate-admin-panel',
+                to: '/category/ultimate-admin-panel',
               },
             ],
           },
