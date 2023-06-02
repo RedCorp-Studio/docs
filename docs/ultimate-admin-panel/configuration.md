@@ -11,50 +11,41 @@ The configuration file can be found in the root folder of the project with the n
 Here is the entire default `config.lua` file for Ultimate Admin Panel :
 
 ```lua title="config.lua"
-Config = {}, Config.Statistics = {}
+Config = {}
+Config.Statistics = {}
 
 Config.Language = "en" -- Language available by default : en | fr
-Config.Multichar = true -- Set to true if you use ESX Multicharacter
+Config.Multichar = false -- Set to true if you use ESX Multicharacter
 
 Config.Keys = { -- Keys used to open different menus
-  Admin = 'H', -- Admin menu
-  Reports = 'J' -- Player's reports menu
+    Admin = 'H', -- Admin menu
+    Reports = 'J' -- Player's reports menu
 }
 
 Config.Permissions = { -- Permissions applied for each group, please see https://redcorp.studio/docs/red-admin/configuration#permissions for more details
-  admin = {
-    Permissions.Admin.All,
-    Permissions.Admin.Invisible,
-    Permissions.Admin.Noclip,
-    Permissions.Admin.ToMarker,
-    Permissions.Admin.ToCoords,
-    Permissions.Admin.SpawnCar,
-    Permissions.Admin.RepairCar,
-    Permissions.Admin.DisplayCoords,
-    Permissions.Admin.DisplayNames,
-    Permissions.Admin.SetPed,
-    Permissions.Admin.Announce,
-    Permissions.Players.All,
-    Permissions.Reports.All
-  },
+    admin = {
+        Permissions.All,
+    },
 
-  owner = { Permissions.All }
+    helper = {
+        Permissions.Players.View
+        Permissions.Dashboard.All
+    }
 }
 
 Config.Statistics.Jobs = { -- Jobs to monitor for repartition statistics
-  'police', 
-  'ambulance', 
-  'reporter', 
-  'miner', 
-  'banker'
+    'police', 
+    'ambulance', 
+    'reporter', 
+    'miner', 
+    'banker'
 }
 
-Config.AdminCarModel = 'baller' -- Default admin car model used for /car
-Config.AdminCarPlate = 'RedCorp' -- Default admin car plate used for /car
+Config.AdminCarPlate = 'REDCORP' -- Default admin car model used for /car
+Config.AdminCarModel = 'baller' -- Default admin car plate used for /car
 
 -- DO NOT TOUCH IF NOT NECESSARY
 Config.LogLevel = 0 -- 0 = Debug | 1 = Info | 2 = Warn | 3 = Danger
-```
 
 ## Permissions
 
