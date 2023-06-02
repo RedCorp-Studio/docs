@@ -46,6 +46,7 @@ Config.AdminCarModel = 'baller' -- Default admin car plate used for /car
 
 -- DO NOT TOUCH IF NOT NECESSARY
 Config.LogLevel = 0 -- 0 = Debug | 1 = Info | 2 = Warn | 3 = Danger
+```
 
 ## Permissions
 
