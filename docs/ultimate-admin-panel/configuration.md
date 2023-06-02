@@ -28,8 +28,8 @@ Config.Permissions = { -- Permissions applied for each group, please see https:/
     },
 
     helper = {
-        Permissions.Players.View
-        Permissions.Dashboard.All
+        Permissions.Players.View,
+        Permissions.Admin.All
     }
 }
 
