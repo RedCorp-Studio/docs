@@ -12,7 +12,6 @@ Here is the entire default `config.lua` file for Ultimate Admin Panel :
 
 ```lua title="config.lua"
 Config = {}
-Config.Statistics = {}
 
 Config.Language = "en" -- Language available by default : en | fr
 Config.Multichar = false -- Set to true if you use ESX Multicharacter
@@ -33,19 +32,8 @@ Config.Permissions = { -- Permissions applied for each group, please see https:/
     }
 }
 
-Config.Statistics.Jobs = { -- Jobs to monitor for repartition statistics
-    'police', 
-    'ambulance', 
-    'reporter', 
-    'miner', 
-    'banker'
-}
-
 Config.AdminCarPlate = 'REDCORP' -- Default admin car model used for /car
 Config.AdminCarModel = 'baller' -- Default admin car plate used for /car
-
--- DO NOT TOUCH IF NOT NECESSARY
-Config.LogLevel = 0 -- 0 = Debug | 1 = Info | 2 = Warn | 3 = Danger
 ```
 
 ## Permissions
@@ -66,7 +54,7 @@ Config.LogLevel = 0 -- 0 = Debug | 1 = Info | 2 = Warn | 3 = Danger
 |`Permissions.Admin.SpawnCar`|Admin can spawn cars|
 |`Permissions.Admin.RepairCar`|Admin can repair cars|
 |`Permissions.Admin.DisplayCoords`|Admin can display his coordinates|
-|`Permissions.Admin.DisplayNames`|dmin can display players names|
+|`Permissions.Admin.DisplayNames`|Admin can display players' names|
 |`Permissions.Admin.SetPed`|Admin can change his own ped|
 |`Permissions.Admin.Announce`|Admin can post server announces|
 

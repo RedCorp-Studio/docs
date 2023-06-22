@@ -5,4 +5,4 @@ slug: /
 
 # Welcome
 
-Welcome on RedCorp Studio official documentation
+Welcome on RedCorp Studio official documentation.
